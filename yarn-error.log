@@ -1,0 +1,46 @@
+Arguments: 
+  C:\Program Files (x86)\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js cy:run
+
+PATH: 
+  C:\Users\ASUS\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ASUS\bin;C:\program files (x86)\common files\intel\shared libraries\redist\intel64\compiler;C:\windows\system32;C:\windows;C:\windows\system32\wbem;C:\windows\system32\windowspowershell\v1.0;C:\windows\system32\openssh;C:\program files\intel\wifi\bin;C:\program files\common files\intel\wirelesscommon;C:\program files\matlab\r2019a\runtime\win64;C:\program files\matlab\r2019a\bin;C:\program files\matlab\r2019a\polyspace\bin;C:\windows\system32;C:\windows;C:\windows\system32\wbem;C:\windows\system32\windowspowershell\v1.0;C:\windows\system32\openssh;C:\program files\git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\nodejs;C:\Users\ASUS\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\ASUS\AppData\Local\Programs\Python\Python37;C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps;C:\Users\ASUS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ASUS\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.21.1
+
+Platform: 
+  win32 ia32
+
+Trace: 
+  SyntaxError: D:\HASBI ASYIDDIKI\Eduwork\package.json: Unexpected string in JSON at position 137
+      at JSON.parse (<anonymous>)
+      at C:\Users\ASUS\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\ASUS\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\ASUS\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "eduwork",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "cy:open": "cypress open"
+      "cy:run": "cypress run"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "cypress": "^12.6.0",
+      "prettier": "^2.8.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
