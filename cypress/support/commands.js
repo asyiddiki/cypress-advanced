@@ -23,3 +23,35 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add("login", (username, password) => {
+    cy.clearCookies();
+    cy.clearLocalStorage();
+  
+    cy.get("#user_login").clear();
+    cy.get("#user_login").type(username);
+  
+    cy.get('input[name="user_password"]').clear();
+    cy.get('input[name="user_password"]').type(password);
+  
+    cy.get("#user_remember_me").type("checkbox");
+  
+    cy.get('input[name="submit"]').click();
+  });
+  
+ Cypress.Commands.add('feedback', (name, email, subject, comment) => {
+    cy.clearCookies();
+    cy.clearLocalStorage();
+  
+    cy.get("#name").clear();
+    cy.get("#name").type(name);
+
+    cy.get('input[name="email"]').clear();
+    cy.get('input[name="email"]').type(email);
+
+    cy.get("#subject").clear();
+    cy.get("#subject").type(subject);
+
+    cy.get("#comment").clear();
+    cy.get("#comment").type(comment);
+
+  })
