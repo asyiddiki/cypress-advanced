@@ -4,5 +4,11 @@
   "name":"hasbi3108",
   "email":"hasbi3108@gmail.com",
   "subject":"testing feedback",
-  "comment": "type your quention here... hehe"
+  "comment": "type your quention here... hehe",
+
+  "usernameSD": "standard_user",
+  "passwordSD": "secret_sauce",
+
+  "usernameinvalid": "dragon",
+  "passwordinvalid": "dragon123"
 }

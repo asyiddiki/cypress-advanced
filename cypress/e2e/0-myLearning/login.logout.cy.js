@@ -52,7 +52,5 @@ describe('Login & Logout Test', () => {
             cy.get('#logout_link').click()
             cy.get('strong').should('contain.text', 'Home')
         });
-
-      
     })
 })

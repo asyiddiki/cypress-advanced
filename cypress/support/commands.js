@@ -55,3 +55,18 @@ Cypress.Commands.add("login", (username, password) => {
     cy.get("#comment").type(comment);
 
   })
+
+  //SauceDemo login
+Cypress.Commands.add('loginSD', (usernameSD, passwordSD) => {
+	cy.clearCookies()
+	cy.clearLocalStorage()
+
+	cy.get('#user-name').clear()
+  cy.get('#user-name').type(usernameSD)
+
+  cy.get('#password').clear()
+  cy.get('#password').type(passwordSD)
+
+  cy.get('#login-button').click()
+
+})
